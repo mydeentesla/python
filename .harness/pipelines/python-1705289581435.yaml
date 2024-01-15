@@ -14,11 +14,11 @@ pipeline:
             steps:
               - step:
                   type: Run
-                  name: Echo Welcome Message
-                  identifier: Echo_Welcome_Message
+                  name: Build Python App
+                  identifier: build_python_app
                   spec:
                     shell: Sh
-                    command: echo "Welcome to Harness CI"
+                    command: echo "Welcome to Harness CI" python -m pip install --upgrade pip pip install  pytest if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           platform:
             os: Linux
             arch: Amd64
