@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_mydeentesla_python_1705289589010-push-trigger-input-set
+  identifier: Build_mydeentesla_python_1705289589010pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_mydeentesla_python_1705289589010
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
